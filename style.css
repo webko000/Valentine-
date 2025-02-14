@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Great Vibes', cursive;
+  background: linear-gradient(45deg, #FFC0CB, #FFFFFF);
+  color: #8B0000;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hearts .heart {
+  position: absolute;
+  background: #FF69B4;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  animation: float 5s infinite ease-in-out;
+}
+
+.hearts .heart::before,
+.hearts .heart::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FF69B4;
+  border-radius: 50%;
+}
+
+.hearts .heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.hearts .heart::after {
+  top: 0;
+  left: -10px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(45deg);
+  }
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5);
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-family: 'Great Vibes', cursive;
+  background: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+.bears {
+  width: 200px;
+  margin-top: 20px;
+}
