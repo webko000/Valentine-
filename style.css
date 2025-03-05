@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Great Vibes', cursive;
-  background: linear-gradient(45deg, #FF02CB, #FFFFFF);
-  color: #8A0000;
+  background: linear-gradient(45deg, #FFC0CB, #FFFFFF);
+  color: #8B0000;
   text-align: center;
   overflow: hidden;
 }
